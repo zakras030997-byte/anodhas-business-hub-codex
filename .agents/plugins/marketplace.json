@@ -1,0 +1,10 @@
+{
+  "name": "anodhas-local",
+  "interface": {"displayName": "ANODHAS · локальные плагины"},
+  "plugins": [{
+    "name": "business-hub",
+    "source": {"source": "local", "path": "./plugins/business-hub"},
+    "policy": {"installation": "AVAILABLE", "authentication": "ON_INSTALL"},
+    "category": "Productivity"
+  }]
+}

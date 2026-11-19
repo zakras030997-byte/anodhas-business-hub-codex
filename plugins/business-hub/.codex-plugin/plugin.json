@@ -1,0 +1,14 @@
+{
+  "name": "business-hub",
+  "version": "0.1.1",
+  "description": "Локальное подключение к предпродакшену бизнес-хаба ANODHAS на Mac.",
+  "author": {"name": "ANODHAS AI"},
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "ANODHAS Business Hub",
+    "shortDescription": "Расчёты, закупки и сверка документов через локальный MCP",
+    "developerName": "ANODHAS AI",
+    "category": "Productivity",
+    "defaultPrompt": ["Сравни два предложения поставщиков для учебной закупки."]
+  }
+}

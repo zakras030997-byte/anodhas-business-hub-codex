@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "anodhas_business_core": {"command": "./bin/start-hub", "args": [], "cwd": "."}
+  }
+}

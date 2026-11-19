@@ -1,0 +1,12 @@
+#!/bin/sh
+set -eu
+
+hub="$HOME/Library/Application Support/ANODHAS/BusinessHub-Preproduction"
+cards="$HOME/Documents/Obsidian/Codex-Operational-Vault/20_Operational/Производственный бизнес/Предпродакшен"
+
+if [ ! -x "$hub/runtime/hub/bin/python" ] || [ ! -f "$hub/core/mcp_hub.py" ] ||
+   [ ! -f "$hub/data/pilot.sqlite3" ] || [ ! -d "$cards" ]; then
+    echo 'Business Hub: проверьте установку предпродакшена, существующую базу SQLite и каталог карточек Obsidian.' >&2
+    exit 1
+fi
+exec "$hub/runtime/hub/bin/python" -B "$hub/core/mcp_hub.py" --pilot-dir "$hub/data" --card-dir "$cards"
