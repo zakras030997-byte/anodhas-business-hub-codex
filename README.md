@@ -1,5 +1,7 @@
 # ANODHAS Business Hub for Codex
 
+![ANODHAS Business Hub — Codex, MCP, macOS](assets/business-hub-cover.jpg)
+
 A local Codex plugin that connects an existing ANODHAS Business Hub installation on macOS over MCP (stdio). It exposes 24 tools across six business modules, including pricing, discounts, supplier comparison, cash forecasts, delivery planning, and order drafts.
 
 This repository contains the marketplace manifest, plugin manifest, and launcher. Running the plugin requires the separately installed ANODHAS Business Hub preproduction runtime. The launcher uses the existing local SQLite database and Obsidian preproduction cards.
